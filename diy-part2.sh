@@ -9,6 +9,6 @@
 # File name: diy-part2.sh
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
-
+sed -i 's/PATCHVER:=6.1/PATCHVER:=5.15/g' target/linux/x86/Makefile
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.98.2/g' package/base-files/files/bin/config_generate
